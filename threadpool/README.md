@@ -1,5 +1,5 @@
-In the original threadpool (og_threadpool) derived from [lecture 10](https://github.com/tsung-wei-huang/ece6960-heterogeneous-programming/tree/main/Code/lecture10),
-the task queue is centralized. The main issue of og_threadpool is as follows:
+In the original_threadpool derived from [lecture 10](https://github.com/tsung-wei-huang/ece6960-heterogeneous-programming/tree/main/Code/lecture10),
+the task queue is centralized. The main issue of original_threadpool is as follows:
 
 - ***Bottleneck***: A centralized task queue can become a bottleneck in the system. If there are multiple threads trying to access the queue simultaneously, they may need to wait their turn to access the queue. This can slow down the overall performance.
 -  ***Difficulty scaling***: A centralized task queue can also make it difficult to scale the system. As the number of tasks and threads increases, the queue can become overwhelmed, thus slowing down the overall performance.
